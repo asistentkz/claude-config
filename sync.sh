@@ -64,7 +64,7 @@ for project in "${PROJECTS[@]}"; do
     cp "$skill_dir"SKILL.md "$project/.claude/skills/$skill_name/SKILL.md"
   done
 
-  echo "  ✓ $project_name — 7 скиллов синхронизированы"
+  echo "  ✓ $project_name — 15 скиллов синхронизированы"
 done
 
 echo ""
@@ -74,7 +74,12 @@ echo "[3/3] Готово!"
 echo ""
 echo "Синхронизировано:"
 echo "  • CLAUDE.md (глобальные правила)"
-echo "  • 7 скиллов: brainstorming, build, research, review, docs, report, test"
+echo "  • 15 скиллов:"
+echo "    Свои: brainstorming, build, research, review, docs, report, test"
+echo "    Superpowers: systematic-debugging, test-driven-development,"
+echo "      verification-before-completion, subagent-driven-development,"
+echo "      dispatching-parallel-agents, receiving-code-review,"
+echo "      finishing-a-development-branch, using-git-worktrees"
 echo ""
 echo "Примечание: проектные CLAUDE.md НЕ перезаписываются."
 echo "Стек-специфичные скиллы (security, sql-audit, migrate-check) — в проектах."

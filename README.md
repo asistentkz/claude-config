@@ -10,13 +10,21 @@ claude-config/
 ├── sync.sh            # Скрипт синхронизации → все проекты + ~/.claude/
 ├── README.md          # Этот файл
 └── skills/
-    ├── brainstorming/ # Мозговой штурм (обязательно первое сообщение)
-    ├── build/         # Оркестратор разработки (не кодит сам)
-    ├── research/      # Исследование кода
-    ├── review/        # Ревью перед деплоем
-    ├── docs/          # Генерация документации
-    ├── report/        # Итоговые отчёты
-    └── test/          # Написание тестов (TDD)
+    ├── brainstorming/                # Мозговой штурм (обязательно первое сообщение)
+    ├── build/                        # Оркестратор разработки (не кодит сам)
+    ├── research/                     # Исследование кода
+    ├── review/                       # Ревью перед деплоем
+    ├── docs/                         # Генерация документации
+    ├── report/                       # Итоговые отчёты
+    ├── test/                         # Написание тестов (TDD)
+    ├── systematic-debugging/         # [SP] 4-фазный дебаг
+    ├── test-driven-development/      # [SP] RED-GREEN-REFACTOR
+    ├── verification-before-completion/ # [SP] Проверка "готово"
+    ├── subagent-driven-development/  # [SP] Субагенты + 2-stage review
+    ├── dispatching-parallel-agents/  # [SP] Параллельные субагенты
+    ├── receiving-code-review/        # [SP] Приём фидбека от ревью
+    ├── finishing-a-development-branch/ # [SP] Merge/PR/cleanup
+    └── using-git-worktrees/          # [SP] Изоляция через worktree
 ```
 
 ## Как использовать
