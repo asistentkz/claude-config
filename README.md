@@ -10,22 +10,36 @@ claude-config/
 ├── sync.sh            # Скрипт синхронизации → все проекты + ~/.claude/
 ├── README.md          # Этот файл
 └── skills/
-    ├── brainstorming/                # Мозговой штурм (обязательно первое сообщение)
-    ├── build/                        # Оркестратор разработки (не кодит сам)
-    ├── research/                     # Исследование кода
-    ├── deep-research/                # Глубокий веб-ресёрч (4 режима)
-    ├── review/                       # Ревью перед деплоем
-    ├── docs/                         # Генерация документации
-    ├── report/                       # Итоговые отчёты
-    ├── test/                         # Написание тестов (TDD)
-    ├── systematic-debugging/         # [SP] 4-фазный дебаг
-    ├── test-driven-development/      # [SP] RED-GREEN-REFACTOR
+    │
+    │  # Основные (свои)
+    ├── brainstorming/                  # Мозговой штурм (обязательно первое сообщение)
+    ├── build/                          # Оркестратор разработки (не кодит сам)
+    ├── research/                       # Исследование кода
+    ├── deep-research/                  # Глубокий веб-ресёрч (4 режима)
+    ├── review/                         # Ревью перед деплоем
+    ├── docs/                           # Генерация документации
+    ├── report/                         # Итоговые отчёты
+    ├── test/                           # Написание тестов
+    ├── tz/                             # Создание технического задания
+    ├── audit-server/                   # Аудит продакшн-сервера (SSH, чек-лист, бэкап)
+    ├── spec-to-code/                   # TDD-пайплайн: ТЗ → тесты → код → /review
+    │
+    │  # Аудит и качество кода
+    ├── api-contract-guardian/          # Проверка API контрактов и схем
+    ├── cicd-quick-setup/               # Готовый деплой-пайплайн под стек
+    ├── dependency-optimizer/           # Аудит зависимостей (CVE, мусор, тяжёлые)
+    ├── error-handling-standardizer/    # Единая обработка ошибок и логирование
+    ├── performance-scanner/            # Узкие места и медленные операции
+    │
+    │  # Superpowers [SP]
+    ├── systematic-debugging/           # [SP] 4-фазный дебаг
+    ├── test-driven-development/        # [SP] RED-GREEN-REFACTOR
     ├── verification-before-completion/ # [SP] Проверка "готово"
-    ├── subagent-driven-development/  # [SP] Субагенты + 2-stage review
-    ├── dispatching-parallel-agents/  # [SP] Параллельные субагенты
-    ├── receiving-code-review/        # [SP] Приём фидбека от ревью
+    ├── subagent-driven-development/    # [SP] Субагенты + 2-stage review
+    ├── dispatching-parallel-agents/    # [SP] Параллельные субагенты
+    ├── receiving-code-review/          # [SP] Приём фидбека от ревью
     ├── finishing-a-development-branch/ # [SP] Merge/PR/cleanup
-    └── using-git-worktrees/          # [SP] Изоляция через worktree
+    └── using-git-worktrees/            # [SP] Изоляция через worktree
 ```
 
 ## Как использовать
