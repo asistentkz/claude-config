@@ -39,7 +39,17 @@ claude-config/
     ├── dispatching-parallel-agents/    # [SP] Параллельные субагенты
     ├── receiving-code-review/          # [SP] Приём фидбека от ревью
     ├── finishing-a-development-branch/ # [SP] Merge/PR/cleanup
-    └── using-git-worktrees/            # [SP] Изоляция через worktree
+    ├── using-git-worktrees/            # [SP] Изоляция через worktree
+    │
+    │  # База данных (PostgreSQL под AiPlus)
+    ├── postgres-patterns/              # Индексы, пагинация, очереди Watermill, multi-schema
+    ├── database-reviewer/              # Ревью SQL/схем/миграций (read-only, file:line)
+    ├── database-migrations/            # Zero-downtime миграции (Goose, expand-contract)
+    │
+    │  # Обслуживание сетапа (ревизоры — только отчёт)
+    ├── skill-stocktake/                # Ревизия скиллов: дубли, качество, вердикты
+    ├── context-budget/                 # Аудит токен-бюджета (CLAUDE.md/скиллы/MCP)
+    └── rules-distill/                  # Принципы из 2+ скиллов → правила
 ```
 
 ## Как использовать
@@ -70,7 +80,7 @@ bash sync.sh
 ## Что НЕ синхронизируется
 
 - **Проектные `CLAUDE.md`** — они специфичны для каждого проекта (стек, порты, интеграции)
-- **Стек-специфичные скиллы** — `/security`, `/sql-audit`, `/migrate-check` живут в проектах
+- **Стек-специфичные скиллы** — `golang-patterns`, `golang-testing`, `dart-flutter-patterns`, `flutter-dart-code-review` живут локально в проекте (vault) и в git не отправляются
 - **`settings.json`** — permissions и хуки специфичны для каждой машины
 
 ## Правила
