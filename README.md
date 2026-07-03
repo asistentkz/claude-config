@@ -9,6 +9,8 @@ claude-config/
 ├── CLAUDE.md          # Глобальные правила (язык, brainstorming first, одобрение и т.д.)
 ├── sync.sh            # Скрипт синхронизации → все проекты + ~/.claude/
 ├── README.md          # Этот файл
+├── docs/
+│   └── fable-guide.md # Памятка: переход с Opus 4.7 на Fable 5
 └── skills/
     │
     │  # Основные (свои)
