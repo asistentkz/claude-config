@@ -1,6 +1,7 @@
 ---
 name: review
 description: Ревью кода перед деплоем/запуском — проверка на ошибки, безопасность, совместимость, побочные эффекты
+model: opus
 allowed-tools: Read, Grep, Glob, Agent
 argument-hint: "[файл, модуль или 'staged' для git diff]"
 ---

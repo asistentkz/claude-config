@@ -1,6 +1,7 @@
 ---
 name: research
 description: Исследование кодовой базы, архитектуры, зависимостей и внешних ресурсов. Только анализ — без редактирования.
+model: sonnet
 allowed-tools: Read, Grep, Glob, Agent, WebFetch, WebSearch
 argument-hint: "[тема или модуль для исследования]"
 ---

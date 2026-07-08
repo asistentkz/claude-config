@@ -32,12 +32,31 @@ done
 
 echo ""
 
+# --- Субагенты (~/.claude/agents/) ---
+# Папка agents/ полностью принадлежит claude-config — чистим перед копированием,
+# чтобы переименованный/удалённый агент не оставил «призрака» в глобале.
+echo "  Субагенты (~/.claude/agents/) ..."
+rm -rf "$GLOBAL_DIR/agents"
+mkdir -p "$GLOBAL_DIR/agents"
+agent_count=0
+if [ -d "$SCRIPT_DIR/agents" ]; then
+  for agent_file in "$SCRIPT_DIR/agents"/*.md; do
+    [ -e "$agent_file" ] || continue
+    cp "$agent_file" "$GLOBAL_DIR/agents/"
+    echo "  ✓ /agents/$(basename "$agent_file")"
+    agent_count=$((agent_count + 1))
+  done
+fi
+
+echo ""
+
 # --- 2. Итог ---
 echo "[2/2] Готово!"
 echo ""
 echo "Синхронизировано:"
 echo "  • CLAUDE.md (глобальные правила)"
 echo "  • $skill_count скиллов → ~/.claude/skills/"
+echo "  • $agent_count субагентов → ~/.claude/agents/"
 echo ""
 echo "Примечание: проектные CLAUDE.md НЕ перезаписываются."
 echo "Стек-специфичные скиллы (security, sql-audit, migrate-check и др.) — в проектах."
