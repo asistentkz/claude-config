@@ -1,5 +1,6 @@
 ---
 name: report
+model: sonnet
 description: Генерация итогового отчёта по модулю — собирает результаты всех проверок в один документ с приоритетами
 allowed-tools: Read, Grep, Glob, Agent, Write
 argument-hint: "[модуль или 'full' для полного отчёта]"

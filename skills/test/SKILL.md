@@ -1,5 +1,6 @@
 ---
 name: test
+model: sonnet
 description: Написание тестов для модуля/функции — сначала анализ, потом генерация тестов с одобрения пользователя
 allowed-tools: Read, Grep, Glob, Agent, Write
 argument-hint: "[файл, функция или модуль для покрытия тестами]"

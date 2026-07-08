@@ -1,5 +1,6 @@
 ---
 name: deep-research
+model: sonnet
 description: Глубокое исследование внешних тем — технологии, сравнения, рынок, инструменты. НЕ код. С режимами глубины и верификацией.
 allowed-tools: Read, Grep, Glob, Agent, WebFetch, WebSearch, Write
 argument-hint: "[quick|standard|deep|ultradeep] тема для исследования"

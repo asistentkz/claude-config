@@ -1,5 +1,6 @@
 ---
 name: context-budget
+model: sonnet
 description: Аудит потребления контекстного окна — CLAUDE.md, правила, MEMORY.md, описания скиллов, MCP-серверы. Находит распухание и дубли, выдаёт приоритизированный список где сэкономить токены. Только отчёт, ничего не правит.
 allowed-tools: Read, Grep, Glob
 argument-hint: "[пусто | '--verbose' для разбивки по файлам]"

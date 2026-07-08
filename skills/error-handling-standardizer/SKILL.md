@@ -1,5 +1,6 @@
 ---
 name: error-handling-standardizer
+model: sonnet
 description: Выстраивает сквозную единую систему обработки исключений и логирования по всему проекту
 allowed-tools: Read, Grep, Glob, Agent, WebSearch, Edit, Write
 argument-hint: "[модуль, директория или 'all' для всего проекта]"

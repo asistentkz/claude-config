@@ -1,5 +1,6 @@
 ---
 name: dependency-optimizer
+model: sonnet
 description: Аудит зависимостей проекта — уязвимости, неиспользуемые пакеты, устаревшие версии, тяжёлые замены
 allowed-tools: Read, Grep, Glob, Agent, WebSearch, Bash
 argument-hint: "[директория проекта или 'all' для всех]"

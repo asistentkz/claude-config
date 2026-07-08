@@ -1,5 +1,6 @@
 ---
 name: docs
+model: sonnet
 description: Генерация документации для модуля — API, структура БД, бизнес-логика, зависимости, инструкции для разработчиков
 allowed-tools: Read, Grep, Glob, Agent, Write, WebSearch
 argument-hint: "[модуль, файл или 'all' для всего проекта]"

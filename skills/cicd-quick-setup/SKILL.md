@@ -1,5 +1,6 @@
 ---
 name: cicd-quick-setup
+model: sonnet
 description: Собирает готовый деплой-пайплайн под стек проекта (Docker, GitHub Actions, PM2, VPS) с защитой существующих конфигов
 allowed-tools: Read, Grep, Glob, Agent, WebSearch, Edit, Write, Bash
 argument-hint: "[проект или 'auto' для автоопределения стека]"

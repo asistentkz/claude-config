@@ -1,5 +1,6 @@
 ---
 name: skill-stocktake
+model: sonnet
 description: Ревизия всех скиллов (глобальных и проектных) на качество и дубли — инвентаризация, оценка субагентом, вердикты Keep/Improve/Update/Retire/Merge. Только отчёт; удаление и слияние — по апруву.
 allowed-tools: Read, Grep, Glob, Agent, Write
 argument-hint: "[пусто — quick scan изменённого | 'full' — полная ревизия]"
